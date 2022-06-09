@@ -1,5 +1,7 @@
 # TakeoPython  By Shadab Khan (+91 7007 586 179)
 6 June 2022
+
+https://www.python.org/downloads/release/python-3105/
 ----------------------------------------------
 Machine or Binary Language : Low lvel Programming Language
 ------------------------------------------------------------
@@ -237,14 +239,101 @@ print(keyword.kwlist)
 
 WAP to create 5 subject marks and print its average
 
+------------------------------------------------------------------
+Data Types:
+-----------
+1. int
+2. float
+3. complex
+4. bool
+5. str
 
 
+6. bytes
+7. bytearray
+8. range
+8. list
+10. touple
+11. set
+12. frozenset
+13. dict
+
+-------------------------------------------
+In-Built functions in Python:
+==============================
+1. type() -> to check type of variable
+
+2. id() -> to get the address of object
+
+3. print() -> to print the value
+
+Base Conversion Functions
+
+4. bin() -> we can use it to covert from any base to binary
+--------------------------------------------------------------
+*) Immutable/Non-Changeble object means no one can modifiy once they created.
+
+int data type:
+--------------
+We can use int data type to represent whole numbers(integers)
+
+a = 10
+type(a)  # <class 'int'>
+
+a) decimal form(base-10) :
+---------------------------
+-> Its default number system in python. 
+-> Allowed digits are 0-9
+
+e.g.     a = 10
+         print(a) # 10
+		
+b) binary form(base-2) :
+---------------------------
+-> Allowed digits are 0-1
+
+e.g.     a = 0B10
+         print(a) # Yes
 
 
+c) octal form(base-8) :
+---------------------------
+-> Allowed digits are 0-7
 
+e.g.     a = 0o10
+         print(a) # Yes
+		 
+d) hexa-decimal form(base-16) :
+---------------------------
+-> Allowed digits are 0-9, A-F
 
+e.g.     a = 0X10
+         print(a) # Yes
 
+# Online Python compiler (interpreter) to run Python online.
+# Write Python 3 code in this online editor and run it.
 
+# It will alway print numbers into decimal-form (base-10)
+a = 10  
+print(a) # 10
+
+a = 0b10  
+print(a) # 2
+
+a = 0o10  
+print(a) # 8
+
+a = 0x10  
+print(a) # 16
+
+a = 0xFACE  
+print(a) # 64206
+
+a = 0xBEEF  
+print(a) # 48879
+
+a = 0xBEER 
+print(a) # ERROR
 
 
 
