@@ -335,6 +335,118 @@ print(a) # 48879
 a = 0xBEER 
 print(a) # ERROR
 
+--------------------------------------------------------------------
+float data type:
+----------------
+-> We can use float dat type to represent floating point values (decimal values)
+
+E.g.
+
+x = 1.25
+
+type(x) # <class 'float'> 
+
+-> We CANNOT represent float in binary, octal or hexa-decimal form
+
+-> x = 1.2e3  OR x = 1.2E3
+    print(x) #  1.2 * 1000 = 1200
+	
+	
+-----------------------------------------------------------------------------
+square root of 4 => 2
+square root of 9 => 3
+square root of 16 => 4
+
+square root of 1 => 1
+
+square root of -1 => imaginary i  but python j
+
+3. complex data type:
+---------------------
+ a + bj   # a is a real part and b is an imaginary
+ 
+ e.g
+ 
+ z = 3 + 5j
+ 
+ ---------------------------------------------------------------
+ 
+4. bool data type:
+------------------
+
+-> True, False
+
+-> In Python, C, C++, JavaScript, every non-zero number treated as True and zero should be treated as False.
+
+-> Emplty string treated as False other strings treated True
+
+E.G. X = "" 
+
+
+in c programming:
+----------------------
+int a = 10;
+
+if( a = 15)
+{
+	printf("Hi");
+}
+else
+{
+	printf("Bye");
+}
+
+OUTPUT -> 'Hi'
+--------------------------------------------------
+5. str data type:
+-------------------
+-> A string is a sequence of characters enclosed within single quotes or double quotes
+
+---------------------------------------------------------------------------------------------
+list data type:
+-------------------
+name1 = 'Java'
+name2 = 'JavaScript'
+name3 = 'Python'
+name4 = 'HTML'
+name5 = 'CSS' 
+
+-> If we want to represent a group of values into a single entity where order required to preseve.
+-> List can contains duplicate elements.
+-> List are growable in nature
+
+
+Example:
+--------------
+fruits = []
+
+technologies =['Java', 'JavaScript', 'Python', 'HTML', 'CSS' ]
+technologies =['Java', 'JavaScript', 'Python', 'HTML', 'CSS' ]
+technologies
+['Java', 'JavaScript', 'Python', 'HTML', 'CSS']
+technologies[0]
+'Java'
+technologies[4]
+'CSS'
+
+technologies[5]
+Traceback (most recent call last):
+  File "<pyshell#4>", line 1, in <module>
+    technologies[5]
+IndexError: list index out of range
+
+technologies[-1]
+'CSS'
+technologies[-2]
+'HTML'
+technologies[-3]
+'Python'
+
+
+---------------------------------------------
+How to access/print all the elements of a list
+
+
 
 
 
