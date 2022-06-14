@@ -447,17 +447,185 @@ technologies[-3]
 How to access/print all the elements of a list
 
 
+for tech in technologies:
+	print(tech)
+
+------------------------------------------------
+Operators:
+----------
+1. Arithmetic Operators
+2. Relational or Comparision Operators
+3. Equality Operators
+4. Logical operators
+5. Assignment opeartors
+6. Bitwise operators
+7. Special operators
+
+1. Arithmetic Operators;
+=========================
++  ==> Addition operator
+-  ==> Subtraction operator
+*  ==> Multiplication operator
+/  ==> Division operator
+%  ==> Modulo operator
+
+// ==> Floor Division operator
+** ==> Exponent operator or power operator
+
+operators.py:
+-----------------
+a = 10
+b = 2
+
+print('a + b = ', (a + b)) # 12
+print('a - b = ', (a - b)) # 8
+print('a * b = ', (a * b)) # 20
+print('a / b = ', (a / b)) # 5.0
+print('a % b = ', (a % b)) # 0
+print('a // b = ', (a // b)) # 5
+print('a ** b = ', (a ** b)) # 100
 
 
+Some speciall cases:
+---------------------
+a)
+
+name = 'shadab'
+print(name * 5) # shadabshadabshadabshadabshadab
+
+b) 
+
+x = 10
+y = 0
+ 
+print(x/y) # ZeroDivisionError: division by zero
+
+----------------------------------------------------------------------------------
+2. Relational or Comparision Operators:
+----------------------------------------
+>, >=, <, <!
+
+Example1:
+----------
+a = 10
+b = 2
+
+print('a > b = ', (a > b)) # True
+print('a >= b = ', (a >= b)) # True
+print('a < b = ', (a < b)) # False
+print('a <= b = ', (a <= b)) # False
+
+Example2:
+----------
+a = 'shadab'
+b = 'shadab'
+
+print('a > b = ', (a > b)) # False
+print('a >= b = ', (a >= b)) # True
+print('a < b = ', (a < b)) # False
+print('a <= b = ', (a <= b)) # True
+
+Example3:
+----------
+a = True  # 1
+b = False # 0
+
+print('a > b = ', (a > b)) # True
+print('a >= b = ', (a >= b)) # True
+print('a < b = ', (a < b)) # False
+print('a <= b = ', (a <= b)) # False
+
+Example4:
+----------
+a = 10
+b = 'shadab'
+
+print('a > b = ', (a > b)) # TypeError: '>' not supported between instances of 'int' and 'str'
+
+3. Equality Operators:
+-----------------------
+ ==, !=
+ 
+ -> We can apply these operators for any type even incompatible types also
+
+a = 10
+b = 2
+
+print( a == b) # False
+print( a != b) # True
+
+print( 10 == True) # False
+
+print( False == False) # True
+
+print('shadab'  == 10) # False
+
+4. Logical operators:
+----------------------
+-> and, or, not
+-> We can apply for all types
+
+-> For boolean types:
+=========================
+	True and False ==> False
+	True or False ==> True
+	not False ==> True
 
 
+-> For non-boolean types:
+=========================
+
+a) 0 means False
+b) non-zero means True
+c) empty string always be treated as False
+
+Example:
+-----------
+print(10 and 20) # True
+
+-------------------------------------------
+Ternary Operator:
+===================
+
+x = firstValue if condition else secondValue
 
 
+a = ------
+b = ------
 
+a = 10
+b = 17
 
+if a > b :
+	print('MAX = ', a)
+else:
+	print('MAX = ', b) 
 
+ #### OR	
 
+max = a if a > b else b
+print('MAX = ', max)
+======================================================
+Lab-1 : WAP for minimum of 3 number
 
+a = 56
+b = 17
+c = 19
+
+if a > b :
+    if a > c:
+        print('MAX = ', a)
+    else :
+        print('MAX = ', c)
+else:
+    if b > c:
+        print('MAX = ', b)
+    else:
+        print('MAX = ', c)
+
+ #### OR	
+
+max = (a if a > c else c) if a > b else (b if b > c else c)
 
 
 
