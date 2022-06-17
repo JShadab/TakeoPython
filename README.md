@@ -760,6 +760,77 @@ salary = 999.25
 
 print("Hello %s your age is %d and salary is %f"  %(age, name, salary))
 
+-------------------------------------------------------------------------------------
+Flow Control statemets:
+-------------------------
+1. Conditional Statements
+		a) if
+		b) if-else
+		c) if-elif-else
+		
+2. Transfer Statements
+		a) break
+		b) continue
+		c) pass
+		
+3. Iterative Statements
+		a) for
+		b) while
+
+
+======================================================
+x = int(input('Enter a number: '))
+
+if ( x % 2 == 0):
+    print('Even Number') 
+else:
+    print('Odd Number')
+	
+-----------------------------------------------------
+x = int(input('Enter a number: '))
+
+if ( x == 1):
+    print('Monday')
+elif ( x == 2):
+    print('Tuesday') 
+elif ( x == 3):
+    print('Wednesday') 
+elif ( x == 4):
+    print('Thursday') 
+elif ( x == 5):
+    print('Friday') 
+elif ( x == 6):
+    print('Saturday') 
+elif ( x == 7):
+    print('Sunday') 
+else:
+    print('Pagal')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
