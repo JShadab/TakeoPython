@@ -627,7 +627,138 @@ else:
 
 max = (a if a > c else c) if a > b else (b if b > c else c)
 
+-------------------------------------------------------------------------
+Input and output statements :
+-----------------------------
+a =int( input("Enter first value: "))
+print(type(a))
 
+b =int( input("Enter second value: "))
+print(type(b))
+
+sum = a + b
+print(sum)
+
+==============================
+// WAP to read employee data and display it
+
+name = input('Enter Employee name: ')
+age = int(input('Enter Employee age: '))
+salary = float(input('Enter Employee salary: '))
+married = bool(input('Employee married?[True | False]: '))
+
+print(name, age, salary, married)
+
+---------------------------------------------
+eval():
+----------
+eval function take a string and evaluates the result.
+
+expr = "10 + 20  + 30"
+
+result = eval(expr)
+
+print(result)
+
+-----------------------------------------
+Command Line arguments:
+----------------------------------------
+from sys import argv
+print('Hello From Test')
+print(type(argv)) # <class 'list'>
+print(argv) # ['test.py', '10', '20', '30']
+
+print( argv[1] +argv[2] +argv[3]) # '102030'
+
+print( int(argv[1]) + int(argv[2]) + int(argv[3])) # '60'
+
+------------------------------------------------------------------
+
+C:\Users\user\Desktop\Takeo Python\TakeoPython>py test.py 10 20 30
+Hello From Test
+<class 'list'>
+['test.py', '10', '20', '30']
+102030
+60
+
+------------------------------------------------------
+Output statements:
+--------------------
+Form-1: print() without arguments
+==================================
+Just it prints new line character
+
+Form-2: print(string) 
+==================================
+
+print('Hello' + 'World')
+print('Hello' * 10) 
+
+Form-3: print(---------) with N number of arguments and with 'sep' attribute
+=============================================================================
+-> Default separator is SPACE
+ 
+In Java:
+------------
+int a = 10, b = 15, c = 20; // OK
+
+int a, b, c = 10, 15, 20; // ERROR
+
+In Python:
+------------
+ a = 10, b = 15, c = 20; // OK
+
+ a, b, c = 10, 15, 20; // OK
+ 
+ print(a, b, c, "Hello", 'Hi', 'Bye')
+ 
+
+ 
+print('Hello', name, 'your age is', age, 'and salary is $', salary, sep=':')
+ # Hello:Shadab:your age is:35:and salary is $:101
+
+Form-4: print(---------) with N number of arguments and with 'end' attribute
+=============================================================================
+ 
+print("Hello")
+print("Java")
+print("Consultant")
+
+OUTPUT:
+-------
+
+Hello
+Java
+Consultant
+
+--------------------------
+
+print("Hello", end=' ')
+print("Java", end=' ')
+print("Consultant", end='\n')
+
+OUTPUT:
+-------
+Hello Java Consultant
+
+Form-5: print(formatted string) 
+================================
+
+print("formatted string" %(variable list))
+
+%i  ===> int
+%d  ===> int
+%f  ===> float
+%s  ===> str
+
+
+Example:
+--------
+name = 'Prashad'
+age = 21
+salary = 999.25
+
+print("Hello %s your age is %d and salary is %f"  %(age, name, salary))
 
 
 
