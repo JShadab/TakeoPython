@@ -806,7 +806,34 @@ elif ( x == 7):
 else:
     print('Pagal')
 
+-----------------------------------------------------------------
+3. Iterative Statements
+	a) for
+		
+Syntax:
+---------
+for <var> in <sequence>:
+	body
 
+Example1:
+---------
+name = 'Shadab Ahmad Khan'
+
+for x in name:
+    print(x)
+		
+Example1:
+---------
+# Print number 0 to 9
+
+for x in range(10):
+    print(x)
+
+# Print 10 to 1 in reverse direction
+for x in range(10, 0, -1):
+    print(x)
+	
+		b) while
 
 
 
