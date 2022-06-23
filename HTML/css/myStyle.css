@@ -1,0 +1,27 @@
+table {
+    width: 80%;
+    margin-left: 10%;
+
+    border: 1px blue solid;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px blue solid;
+    background-color: aquamarine;
+}
+
+th {
+    background-color: yellow;
+    color:brown;
+}
+
+td {
+    text-align: center;
+}
+
+h1{
+    color: red;
+    text-align: center;
+}

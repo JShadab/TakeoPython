@@ -808,7 +808,7 @@ else:
 
 -----------------------------------------------------------------
 3. Iterative Statements
-	a) for
+	a) for loop
 		
 Syntax:
 ---------
@@ -832,17 +832,104 @@ for x in range(10):
 # Print 10 to 1 in reverse direction
 for x in range(10, 0, -1):
     print(x)
+---------------------------------------------------------------	
+ b) while loop
+ --------------
+ 
+ Syntax:
+ -----------
+	while <condition> :
+		<body>
+
+x =1
+
+while x < 11:
+    print(x)
+    x = x+1
 	
-		b) while
+=====================================================
+# WAP to print only ODD number between 1 to 100
+
+for x in range(1,101):
+    if x % 2 != 0:
+        print(x)
+---------------------------------------------------------
+2. Transfer Statements
+		a) break
+		b) continue
+		c) pass
+
+Example:
+==============
+for x in range(10):
+    if x == 6:
+        break
+    print(x)
+
+Output:
+----------
+0
+1
+2
+3
+4
+5
+
+--------------------------------------
+Example:
+==============
+for x in range(10):
+    if x == 6:
+        continue
+    print(x)
+
+Output:
+----------
+0
+1
+2
+3
+4
+5
+7
+8
+9
+
+---------------------------------------------------------
+Types of CSS:
+--------------
+1. Internal CSS:
+================
+
+<style>
+
+  CSS goes HERE.....
+  
+</style>
 
 
+2. External CSS:
+=================
+=> We will create a file wih any name but having extension '.css'
+=> We can use this file in our HTML page by using link tag
+	
+	<link rel="stylesheet" href="path of css file" >
 
 
+3. Inline CSS:
+--------------------
+
+Style as an attribute.
+
+    <h1 style="color: red;">This is Table Demo</h1>
 
 
+On Heading
 
-
-
+Default CSS -> Black
+External css -> RED
+Internal CSS -> Green
+Inline CSS -> Blue
 
 
 
