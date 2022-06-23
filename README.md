@@ -924,13 +924,16 @@ Style as an attribute.
     <h1 style="color: red;">This is Table Demo</h1>
 
 
-On Heading
+On a same Heading:
 
 Default CSS -> Black
 External css -> RED
 Internal CSS -> Green
 Inline CSS -> Blue
 
+Output:
+-----------
+BLUE
 
 
 
